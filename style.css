@@ -1,0 +1,35 @@
+
+.para{
+    width: 400px;
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+table,td,th{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+
+
+/* .naveen{
+    background-color: pink;
+} */
+
+thead{
+    background-color: rgb(126, 193, 67);
+}
+
+tbody{
+    background-color: #def3ca;
+}
+
+/* ul{
+    list-style-type: upper-alpha;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+} */

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML first class</title>
+    <!-- internal css -->
+    <style>
+      #para1 {
+        background-color: magenta;
+        text-align: center;
+        color: #fff;
+      }
+      #para3 {
+        padding: 10px;
+        font-size: 24px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Tag  -- the syntax itself is called a tag.
+    Element -- html consist of / defined by a start tag , some content 
+    and end tag. (this is html comment)  -->
+
+    <!-- this is h1 tag  -->
+    <!-- <h1>Hello world</h1> -->
+
+    <!-- this is h1 element -->
+    <!-- <h2>Hello world</h2>
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    <h5>Hello world</h5>
+    <h6>Hello world</h6> -->
+
+    <!-- <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, velit
+      quas voluptates at, accusantium ducimus beatae tempore earum commodi sit
+      voluptatum corporis. Ab, quia a officiis optio modi magni alias.
+    </p> -->
+
+    <!-- Quotations and citation elements -->
+    <!-- HTml formmating elements -->
+    <!-- HTML attributes -->
+    <!-- class and id attribute -->
+    <!-- html table  -->
+    <!-- html list -->
+
+    <h2>HTML class and id attribute</h2>
+    <!-- 
+    class - multiples in any html element and selected by .
+    styling
+    p
+    h3
+    div
+    id- js, unique 
+    id - unique identifer and selected by #.
+    
+    -->
+
+    <!-- <p id="para1"> This is paragraph 1 </p>
+    
+    <p class="para2"> This is paragraph 2 </p>
+    
+    <p id="para3"> This is paragraph 3 </p> -->
+
+    <!-- css in html 
+    1. inline css  - style attribute in any html tag
+    2. Internal css - style tag in head tag
+    3. external css  - create a separate css file and link with existing html file using 
+    link tag in head tag
+    
+    -->
+
+    <!-- inline css -->
+    <h2 style="text-align: center; border: 2px solid green">hello world</h2>
+
+    <p class="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure qui placeat
+      sed ipsam rem aliquam accusamus accusantium minus asperiores aperiam.
+      Maxime praesentium adipisci culpa aspernatur at quisquam omnis repudiandae
+      reprehenderit.
+    </p>
+
+    <!-- HTML table -->
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th colspan="2">Salary & position</th>
+          <!-- <th>Position</th> -->
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Krishna</td>
+          <td rowspan="2">$4000</td>
+          <td rowspan="3">Web dev.</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td class="naveen">Naveen</td>
+          <!-- <td>$4000</td> -->
+          <!-- <td>Web dev.</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Vikram</td>
+          <td>$4000</td>
+          <!-- <td>Web dev.</td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- HTML/css colors 
+     1. name 
+     2. hex  - #
+     3. rgb - red green blue 
+     4. hsl - hue saturation light
+     
+
+     HTML/css colors 
+     css in html 
+     html table 
+     class and id attribute
+    
+    -->
+
+    <!-- 
+    HTML list 
+    1. Ordered list - ol
+    2. Unordered list - ul
+    3. Description list  -- dl
+
+    -->
+
+    <!-- <ol>
+      <li>Coffe</li>
+      <li>Milk</li>
+      <li>Hot coffe</li>
+    </ol>
+
+
+    <ul>
+      <li>Coffe</li>
+      <li>Milk</li>
+      <li>Hot coffe</li>
+    </ul>
+
+
+    <dl>
+      <dt>HTML</dt>
+      dd is  used to describe the description term in description list 
+      <dd>HTML is used to define the structure of Webpage</dd>
+
+      
+    </dl> -->
+
+    <ol>
+      <li>
+        Fruits
+        <ol>
+          <li>Mango</li>
+          <li>orange</li>
+        </ol>
+      </li>
+      <li>Vegetables</li>
+    </ol>
+
+    <h2>HTML block and inline elements</h2>
+
+    <!-- 
+    Block elements - which starts with the new line and takes 100% of 
+    width available(of the parent container)
+    for eg- p , h1 to h6 , div , section - block elements 
+
+    Inline elements - which starts with the same line and takes as much 
+    width as necessary.
+    for eg- img, span , a ,(formatting elements) etc.. 
+    
+    -->
+    <!-- block element -->
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+
+    <!-- Inline element -->
+
+    <a href="#">Click to go google</a>
+    <a href="#">Click to go google</a>
+    <span>Hello world</span>
+
+    <!-- suggested inline inside block -->
+    <p>
+      <a href="#">Click to go google</a>
+      <a href="#">Click to go google</a>
+    </p>
+
+    <!-- not suggested block inside inline -->
+    <a href="#">
+      <p>hlo</p>
+      <p>hlo</p>
+    </a>
+
+    <section>
+      <div>
+        <h2>Career Related Program</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nisi
+          dolorem officia doloribus assumenda exercitationem non, ea saepe
+          incidunt eos. Velit in quis, consectetur omnis obcaecati eius nulla
+          dolore excepturi.
+        </p>
+      </div>
+
+      <div class="parent-container">
+        <div class="child-container">
+          <div class="head-child">
+            <img src="" alt="" />
+            <span></span>
+          </div>
+        </div>
+        <div class="child-container">
+          <div class="head-child">
+            <img src="" alt="" />
+            <span></span>
+          </div>
+        </div>
+        <div class="child-container">
+          <div class="head-child">
+            <img src="" alt="" />
+            <span></span>
+          </div>
+        </div>
+        <div class="child-container">
+          <div class="head-child">
+            <img src="" alt="" />
+            <span></span>
+          </div>
+        </div>
+        <div class="child-container">
+          <div class="head-child">
+            <img src="" alt="" />
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <br />
+
+    <p>the lknlknfglan <code> background-color: #def3ca;</code></p>
+
+    <br />
+    <hr />
+    <h2>HTML form</h2>
+
+    <form>
+      <fieldset>
+        <legend>Employee details</legend>
+        <div>
+          <label>Enter your name</label>
+          <input type="text" required placeholder="enter name here...." />
+        </div>
+        <br />
+
+        <div>
+          <label>Enter your email</label>
+          <input type="email" placeholder="enter email here...." />
+        </div>
+        <br />
+
+        <div>
+          <label>Enter your phone no.</label>
+          <input type="number" />
+        </div>
+        <br />
+
+        <div>
+          <label>Enter your DOB</label>
+          <input type="date" />
+          <input type="datetime" />
+          <input type="datetime-local" />
+          <input type="week" />
+          <input type="month" />
+          <input type="time" />
+        </div>
+        <br />
+
+        <div>
+          <label>Gender</label>
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+                    <input type="radio" name="gender" value="Female" /> Female
+        </div>
+
+
+          <div>
+          <label>Gender</label>
+          <input type="checkbox" name="gender" value="Male" /> Male
+          <input type="checkbox" name="gender" value="Female" /> Female
+                    <input type="checkbox" name="gender" value="Female" /> Female
+        </div>
+        <br />
+
+        <div>
+          <label>Select your course</label>
+          <select>
+            <option value="Graphic Design">Graphic design</option>
+            <option value="Graphic Design">web design</option>
+            <option value="Graphic Design" selected>Digital marketing</option>
+          </select>
+        </div> <br>
+
+
+        <div>
+        <textarea rows="10" cols="50" placeholder="enter here message"></textarea>
+
+        </div>
+
+        <div>
+          <!-- others -->
+           <input type="color">
+             <input type="url">
+               <input type="search">
+                 <input type="hidden">
+                   <input type="file">
+                   <input type="range">
+        </div>
+        <br> <br>
+
+        <div>
+          <input list="cities" placeholder="select your city">
+          <datalist id="cities">
+            <option value="New delhi"></option>
+             <option value="Haryana"></option>
+              <option value="Mumbai"></option>
+               <option value="Rajasthan"></option>
+                <option value="Uttar Pradesh"></option>
+          </datalist>
+
+        </div>
+        <br />
+
+        <div>
+          <button type="submit">Submit</button>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- iframe - inline frame (external - embed) -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.004519979889!2d77.21874567604402!3d28.56962698693347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3f4be7ebd19%3A0x5749107e44b8a901!2sTGC%20India%20%7C%20Web%20Development%20%26%20Design%20Course%20in%20Delhi%20%7C%20Animation%20Course%20in%20Delhi!5e0!3m2!1sen!2sin!4v1764227390693!5m2!1sen!2sin" height="500" loading="lazy"
+     frameborder="0" allowfullscreen="" width="500px"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_GE6zf_hH48?si=0EDL5e0XMAV8jAG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe src="test.html" width="500" height="500" frameborder="0"></iframe>
+
+
+
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="https://www.tgcindia.com/public/uploads/202509161657new-site-banner.webp" usemap="#image-map">
+
+<map name="image-map">
+    <area  href="https://www.tgcindia.com/contact-us" coords="1331,284,1430,284,1443,296,1443,311,1434,321,1334,321,1319,307,1323,294" shape="poly">
+</map>
+
+<hr>
+
+<h2> Meta tags</h2>
+
+
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
